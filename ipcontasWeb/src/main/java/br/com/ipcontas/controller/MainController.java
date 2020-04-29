@@ -33,4 +33,12 @@ public class MainController {
 
 		return modelAndView;
 	}
+	
+	@RequestMapping(value = "/sobre", method = RequestMethod.GET)
+	public ModelAndView sobre() {
+
+		ModelAndView modelAndView = new ModelAndView("about");
+
+		return modelAndView;
+	}
 }
